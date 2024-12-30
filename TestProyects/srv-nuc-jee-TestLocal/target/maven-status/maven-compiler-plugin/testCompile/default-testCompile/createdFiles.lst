@@ -1,0 +1,5 @@
+com\telefonica\futr\srv\nuc\testlocal\msg\PojoTest.class
+com\telefonica\futr\srv\nuc\testlocal\service\WorkStateLocalServiceTest.class
+com\telefonica\futr\srv\nuc\testlocal\WorkStateLocalApplication.class
+com\telefonica\futr\srv\nuc\testlocal\service\getworkstate\GetWorkStateCommandTest.class
+com\telefonica\futr\srv\nuc\testlocal\service\getworkstate\GetWorkStateMapperTest.class

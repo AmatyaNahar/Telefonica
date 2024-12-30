@@ -1,0 +1,15 @@
+
+
+tap:   
+  data:
+    datasource:
+      url: jdbc:oracle:thin:@//enhol01v-scan.serv.test.dc.es.telefonica:50001/DTLCO1_JDBC_FUTRAC
+      username: UBD_FUTRAC1
+      password: temporal1
+      schema-username: UMD_FUTRAC1   
+ 
+logging:   
+  level:
+    com.telefonica.futr: TRACE   
+    com.telefonica.coco.logging.execution: DEBUG    
+    org.eclipse.persistence.logging.sql: DEBUG

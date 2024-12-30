@@ -1,0 +1,42 @@
+### PROPIEDADES DE APLICACION en modo 'dev'
+### Nota: Adaptar este fichero conforme a las necesidades del entorno de Desarrollo Local
+   
+spring:
+  config:
+    import: 
+# Descomentar el entorno al que se quiera apuntar:
+# EDC:
+    - configserver://t3zk-zook-intr-client-pca-t3zk-desa-bck.be.ndp.ocjc4pgpre01.serv.dev.dc.es.telefonica:5085
+# EIN:
+#    - configserver://t3zk-zook-intr-client-pca-t3zk-inte-bck.be.ndp.ocjc4pgpre01.serv.dev.dc.es.telefonica:5086
+# ECE:
+#    - configserver://t3zk-zook-intr-client-pca-t3zk-cert-bck.be.ndp.ocjc4pgpre01.serv.test.dc.es.telefonica:5087
+# ECO:
+#    - configserver://t3zk-zook-intr-client-pca-t3zk-corr-bck.be.ndp.ocjc4pgpre01.serv.test.dc.es.telefonica:5088
+# EPR (descomentar la parte de BBDD más abajo mejor, para no ir con el usuario generico)
+#    - configserver://t3zk-zook-intr-client-pca-t3zk-prod-bck.be.ndp.ocjc4.serv.dc.es.telefonica:5089
+
+---
+     
+tap:  
+  cache:
+    mode: localstorage   
+    enabled: false
+#Descomentar las 5 líneas de abajo de esta para poder apuntar a EPR (y volver a comentarlo para el resto de entornos, para que coja la config de ZK):
+#  data:
+#    datasource:
+#      url: jdbc:oracle:thin:@//ephol01v-scan.serv.dc.es.telefonica:50001/PTLCO0_DEVLP
+#      username: T628185 o T612597
+#      password: preguntar la password 
+      
+management:
+    endpoints.web.exposure.include: '*'
+  
+logging:   
+  level:
+    com.telefonica.futr: TRACE   
+    com.telefonica.coco.logging.execution: TRACE # para que logue también entradas y salidas.
+    org.eclipse.persistence.logging.sql: DEBUG
+    
+server:
+  port: 9091  

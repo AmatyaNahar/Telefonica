@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.telefonica.coco.tap</groupId>
+        <artifactId>tap-parent</artifactId>
+        <version>4.4.5-15</version>
+    </parent>
+    <groupId>com.telefonica.futr.dao</groupId>
+    <artifactId>dao-Test</artifactId>
+    <version>3.1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>dao-Test</name>
+    <url>http://www.telefonica.es</url>
+    <properties>
+        <aplicacion>futr</aplicacion>
+        <tipo.activo>dao</tipo.activo>
+        <revision>1</revision>
+        <entrega>1</entrega>
+        <database.id>1706478230,0,106</database.id>
+        <aris.id>6437c652-640e-11ed-7e55-005056ad4469</aris.id>
+        <tecnologia.implementacion>JEE</tecnologia.implementacion>
+    </properties>
+    <dependencies>
+        <!-- **************** Infrastructure **************** -->
+        <dependency>
+            <groupId>com.telefonica.coco.tap</groupId>
+            <artifactId>tap-starter-data</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.telefonica.coco.tap</groupId>
+            <artifactId>tap-starter-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.telefonica.coco.tap</groupId>
+            <artifactId>tap-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!-- **************** Application-specific **************** -->
+        <dependency>
+            <groupId>com.telefonica.futr.model</groupId>
+            <artifactId>model-futr</artifactId>
+            <version>4.24.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+</project>

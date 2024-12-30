@@ -1,0 +1,12 @@
+### PROPIEDADES DE ARRANQUE
+### Nota: No editar este fichero sin el consentimiento expreso de AT
+
+module:
+  application: futr
+  type: srv-nuc-jee
+  name: srv-nuc-jee-WorkStateLocal
+  version: 3
+  
+spring:
+  application:
+    name: ${module.name}-v${module.version}

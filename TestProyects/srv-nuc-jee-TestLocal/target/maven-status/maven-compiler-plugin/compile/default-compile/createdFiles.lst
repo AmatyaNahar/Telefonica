@@ -1,0 +1,12 @@
+com\telefonica\futr\srv\nuc\testlocal\msg\getworkstate\Work_DTO_IN.class
+com\telefonica\futr\srv\nuc\testlocal\service\getworkstate\GetWorkStateMapperImpl.class
+com\telefonica\futr\srv\nuc\testlocal\msg\getworkstate\GetWorkState_OUT.class
+com\telefonica\futr\srv\nuc\testlocal\service\TestLocalService.class
+com\telefonica\futr\srv\nuc\testlocal\service\getworkstate\GetWorkStateValidator.class
+com\telefonica\futr\srv\nuc\testlocal\service\TestLocalCommands.class
+com\telefonica\futr\srv\nuc\testlocal\service\getworkstate\GetWorkStateCommand.class
+com\telefonica\futr\srv\nuc\testlocal\msg\getworkstate\GetWorkState_IN.class
+com\telefonica\futr\srv\nuc\testlocal\msg\getworkstate\package-info.class
+com\telefonica\futr\srv\nuc\testlocal\service\getworkstate\GetWorkStateMapper.class
+com\telefonica\futr\srv\nuc\testlocal\msg\getworkstate\ObjectFactory.class
+com\telefonica\futr\srv\nuc\testlocal\msg\getworkstate\WorkState_DTO_OUT.class

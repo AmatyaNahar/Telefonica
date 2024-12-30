@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.telefonica.coco.tap</groupId>
+        <artifactId>tap-parent</artifactId>
+        <version>4.5.1-3</version>
+    </parent>
+    <groupId>com.telefonica.futr.srv.nuc</groupId>
+    <artifactId>srv-nuc-jee-Test</artifactId>
+    <version>3.1.0-SNAPSHOT</version>
+    <name>srv-nuc-jee-Test</name>
+    <packaging>jar</packaging>
+    <url>http://www.telefonica.es</url>
+    <properties>
+        <aplicacion>futr</aplicacion>
+        <tipo.activo>srv-nuc-jee</tipo.activo>
+        <revision>1</revision>
+        <entrega>1</entrega>
+        <aris.id>526eb512-544f-11ed-5554-005056ad78fa</aris.id>
+        <database.id>1706478230,0,106</database.id>
+        <tecnologia.implementacion>JEE</tecnologia.implementacion>
+        <app.main-class>com.telefonica.futr.srv.nuc.test.TestApplication</app.main-class>
+        <endpoint.resource>uddi:futr.srv-nuc-Test-R-v3=/resources</endpoint.resource>
+        <endpoint.resource-exp>uddi:futr.srv-exp-Test-R-v3=/resources</endpoint.resource-exp>
+        <endpoint.webservice>uddi:futr.srv-nuc-Test-v3=/services/endpoint,/publicsvn/PUBLICO/1_VigentesDESA/_OLA2/FUTR/srv-nuc-jee/trunk/srv-nuc-jee-Test/wsdl/srv-nuc-Test-v3.wsdl</endpoint.webservice>
+        <endpoint.webservice-exp>uddi:futr.srv-exp-Test-v3=/services/endpoint,/publicsvn/PUBLICO/1_VigentesDESA/_OLA2/FUTR/srv-nuc-jee/trunk/srv-nuc-jee-Test/wsdl/srv-nuc-Test-v3.wsdl</endpoint.webservice-exp>
+    </properties>
+    <dependencies>
+        <!-- **************** Infrastructure **************** -->
+        <dependency>
+            <groupId>com.telefonica.coco.tap</groupId>
+            <artifactId>tap-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.telefonica.coco.tap</groupId>
+            <artifactId>tap-starter-web-services</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.telefonica.coco.tap</groupId>
+            <artifactId>tap-starter-data</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.telefonica.coco.tap</groupId>
+            <artifactId>tap-starter-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.telefonica.coco.tap</groupId>
+            <artifactId>tap-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!-- **************** Application-specific **************** -->
+        
+        <dependency>
+            <groupId>com.telefonica.futr.srv.nuc</groupId>
+            <artifactId>srv-nuc-jee-TestLocal</artifactId>
+            <version>3.1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.telefonica.futr.srv.util</groupId>
+            <artifactId>srv-util-jee-Util</artifactId>
+            <version>4.2.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>

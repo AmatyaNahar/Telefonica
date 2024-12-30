@@ -1,0 +1,13 @@
+### PROPIEDADES DE APLICACION
+### Nota: No editar este fichero sin el consentimiento expreso de AT
+
+module:
+  application: futr
+  type: srv-nuc-jee
+  name: srv-nuc-jee-Test
+  version: 6
+  
+spring:
+  application:
+    name: futr-srv-nuc-jee-test-3
+

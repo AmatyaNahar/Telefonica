@@ -1,0 +1,12 @@
+### PROPIEDADES DE ARRANQUE
+### Nota: No editar este fichero sin el consentimiento expreso de AT
+
+module:
+  application: futr
+  type: dao
+  name: dao-Test
+  version: 4
+  
+spring:
+  application:
+    name: futr-dao-test-4

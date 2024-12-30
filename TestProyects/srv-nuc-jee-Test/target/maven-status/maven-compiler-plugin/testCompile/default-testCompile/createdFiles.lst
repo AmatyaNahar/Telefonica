@@ -1,0 +1,6 @@
+com\telefonica\futr\srv\nuc\test\facade\TestWebServiceTest.class
+com\telefonica\futr\srv\nuc\test\service\TestServiceTest.class
+com\telefonica\futr\srv\nuc\test\facade\TestResourceTest.class
+com\telefonica\futr\srv\nuc\test\msg\PojoTest.class
+com\telefonica\futr\srv\nuc\test\service\listworksbystate\ListWorksByStateCommandTest.class
+com\telefonica\futr\srv\nuc\test\service\listworksbystate\ListWorksByStateMapperTest.class
